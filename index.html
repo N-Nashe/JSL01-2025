@@ -1,61 +1,63 @@
-<html>
-  <head>
-    <meta />
-    <meta />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-
-  <body>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
     <!-- Navigation Sidebar: Contains the logo, navigation links for boards, and theme toggle. -->
-    <nav>
-      <div>
+    <nav class="sidebar">
+      <div class="board/button">
         <h4>ALL BOARDS (1)</h4>
         <button>Launch Career</button>
       </div>
     </nav>
 
     <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
-    <div>
+    <div class="header">
       <header>
         <div>
           <h2>Launch Career</h2>
         </div>
       </header>
 
-      <div>
+      <div class="task-columns">
         <main>
           <!-- Task Columns: Display tasks grouped by status (TODO, DOING, DONE). -->
-          <div>
-            <div>
+          <div class="todo-column">
+            <div class="todo-header">
               <span></span>
               <h4>TODO</h4>
             </div>
             <!-- Tasks container for TODO -->
-            <div>
+            <div class="todo-buttons">
               <div>Launch Epic Career 🚀</div>
               <div>Learn Data Structures and Algorithms 📚</div>
             </div>
           </div>
           <!-- DOING Column -->
-          <div>
-            <div>
+          <div class="doing-column">
+            <div class="doing-header">
               <span></span>
               <h4>DOING</h4>
             </div>
             <!-- Tasks container for DOING -->
-            <div>
+            <div class="doing-buttons">
               <div>Master JavaScript 💛</div>
               <div>Keep on Going 🏆</div>
             </div>
           </div>
           <!-- DONE Column -->
-          <div>
-            <div>
+          <div class="done-column">
+            <div class="done-header">
               <span></span>
               <h4>DONE</h4>
             </div>
             <!-- Tasks container for DONE -->
-            <div>
+            <div class="done-buttons">
               <div>Contribute to Open Source Projects 🌐</div>
               <div>Build Portfolio Projects 🛠️</div>
             </div>
@@ -63,5 +65,6 @@
         </main>
       </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>
