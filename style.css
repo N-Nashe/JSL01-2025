@@ -103,3 +103,93 @@ body {
 .logo {
     width: 80%;
 }
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        width: 98%;
+    }
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+    }
+    .sidebar button {
+        display: none; /* Hide button on tablet/mobile */
+    }
+    .content-container {
+        padding: 1em;
+    }
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        margin-left: 0;
+    }
+
+    .header h2{
+        display:none;
+    }
+
+    .main-header{
+        display:none;
+    }
+
+    .all-boards {
+        display: none; /* Hide all boards on tablet/mobile */
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5em 0.5em;
+    }
+    .sidebar button {
+        display: none; /* Hide button on mobile */
+    }
+    .main-content {
+        display: block;
+        margin-left: 0;
+    }
+    .todo-column,
+    .doing-column,
+    .done-column {
+      margin bottom: 1.5em;
+      min width:0;
+      padding-left:1.1em;
+        
+    
+    }
+    .main-header {
+        padding: 0.5em 1em;
+        font-size: 1em;
+    }
+    .header h2 {
+        font-size: 1.2em;
+    } 
+    .todo-buttons div,
+    .doing-buttons div,
+    .done-buttons div {
+        font-size: 0.95em;
+        padding: 0.5em;
+        width: 75%;
+        padding-left:1.4em
+    }
+
+    .header h2{
+        display:none;
+    }
+
+    .main-header{
+        display:none;
+    }
+    .all-boards {
+        display: none; /* Hide all boards on mobile */
+    }
+}
+
+
