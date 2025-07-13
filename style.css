@@ -10,7 +10,7 @@ body {
 }
 
 .sidebar {
-    width: 220px;
+    width: 15em;
     background: #ffffff;
     color: #828FA3;
     padding: 2em 1em;
@@ -32,6 +32,16 @@ button {
     background: #E4EBFA;
 }
 
+.main-header{
+    
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+
+}
 .main-content {
     display: grid;
     grid-template-columns: repeat(4, 2fr);
