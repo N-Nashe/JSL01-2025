@@ -11,14 +11,28 @@ body {
 
 .sidebar {
     width: 220px;
-    background: #222;
-    color: #fff;
+    background: #ffffff;
+    color: #828FA3;
     padding: 2em 1em;
     box-shadow: 2px 0 8px rgba(0,0,0,0.05);
 }
 
-.header {
+.content-container {
     flex: 1;
     padding: 2em;
-    background: #f4f6f8;
+    background: #E4EBFA;
+}
+
+.task-columns{ 
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.header{
+    background-color: white;
+}
+
+.logo{
+    width:80%;
 }
