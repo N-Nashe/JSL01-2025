@@ -17,22 +17,61 @@ body {
     box-shadow: 2px 0 8px rgba(0,0,0,0.05);
 }
 
+button {
+    background: #635FC7;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 .content-container {
     flex: 1;
     padding: 2em;
     background: #E4EBFA;
 }
 
-.task-columns{ 
-    display: flex;
-    flex-direction: row;
-    
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 4em;
 }
 
-.header{
+.todo-buttons div{
+    background: #F4F7FD;
+    padding: 0.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    gap:2em;
+}
+.doing-buttons div {
+    background: #F4F7FD;
+    padding: 0.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.done-buttons div {
+    background: #F4F7FD;
+    padding: 0.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.todo-buttons,
+.doing-buttons,
+.done-buttons {
+    display:flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+
+.header {
     background-color: white;
 }
 
-.logo{
-    width:80%;
+.logo {
+    width: 80%;
 }
