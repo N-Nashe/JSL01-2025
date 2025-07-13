@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     background: #f4f6f8;
 }
 
@@ -16,6 +16,7 @@ body {
     color: #828FA3;
     padding: 2em 1em;
     box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+    font
 }
 
 
@@ -26,8 +27,11 @@ body {
     border-bottom-right-radius: 15px;
     padding: 1.4em 5em;
     margin-left: 0;
+    padding-left: 1em;
+    font-weight: 500;
     width: 100%;
     color: #FFFFFF;
+    
 }
 
 
@@ -41,13 +45,16 @@ body {
 }
 
 .main-header{
-    
     top: 0;
     z-index: 100;
     background: #fff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 0.7em 2em;
+}
 
+.header{
 
+    margin-left:0.5em;
 }
 .main-content {
     display: grid;
@@ -56,24 +63,33 @@ body {
     margin-left: 2em;
 }
 
+.status{
+    font-family:"Plus Jakarta Sans", sans-serif;
+    font-weight: 300;
+    color: #828FA3;
+}
+
 .todo-buttons div{
     background: #F4F7FD;
-    padding: 0.5em;
+    padding: 0.6em;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     gap:2em;
+    font-weight: 500;
 }
 .doing-buttons div {
     background: #F4F7FD;
-    padding: 0.5em;
+    padding: 0.6em;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-weight: 500;
 }
 .done-buttons div {
     background: #F4F7FD;
-    padding: 0.5em;
+    padding: 0.6em;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-weight: 500;
 }
 
 .todo-buttons,
@@ -82,12 +98,6 @@ body {
     display:flex;
     flex-direction: column;
     gap: 1em;
-}
-
-
-
-.header {
-    background-color: white;
 }
 
 .logo {
